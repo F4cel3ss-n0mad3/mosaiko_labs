@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #f5f5dc; /* beige */
+    --color-foreground: #1a1a1a; /* gray-900 */
+    --color-border: #8fbc8f; /* darkseagreen */
+    --color-input: #ffffff; /* white */
+    --color-ring: #8fbc8f; /* darkseagreen */
+    
+    /* Card Colors */
+    --color-card: #ffffff; /* white */
+    --color-card-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Popover Colors */
+    --color-popover: #ffffff; /* white */
+    --color-popover-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Muted Colors */
+    --color-muted: #f5f5dc; /* beige */
+    --color-muted-foreground: #4a5568; /* gray-600 */
+    
+    /* Primary Colors */
+    --color-primary: #1a1a1a; /* gray-900 */
+    --color-primary-foreground: #ffffff; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #8fbc8f; /* darkseagreen */
+    --color-secondary-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Destructive Colors */
+    --color-destructive: #e53e3e; /* red-600 */
+    --color-destructive-foreground: #ffffff; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #d2b48c; /* tan */
+    --color-accent-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Success Colors */
+    --color-success: #8fbc8f; /* darkseagreen */
+    --color-success-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Warning Colors */
+    --color-warning: #d69e2e; /* yellow-600 */
+    --color-warning-foreground: #1a1a1a; /* gray-900 */
+    
+    /* Error Colors */
+    --color-error: #e53e3e; /* red-600 */
+    --color-error-foreground: #ffffff; /* white */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .shadow-consultation {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-testimonial {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .transition-smooth {
+    transition: all 250ms ease-in-out;
+  }
+}
